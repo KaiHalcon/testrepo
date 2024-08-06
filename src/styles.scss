@@ -1,0 +1,41 @@
+h1{
+    text-align: center;
+    color: white;
+    background-color: black;
+}
+
+.button{
+    background-color: black;
+    color: white;
+}
+
+h2{
+    text-align: center;
+    color: black;
+}
+
+.listItems{
+    background-color: white;
+    width: 100%;
+}
+
+.formBtns, .formLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.listDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+    background-color: beige;
+}
+
+.listHeader{
+    text-align: center;
+}

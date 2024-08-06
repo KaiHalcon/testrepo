@@ -60,13 +60,7 @@ export const Home = () => {
     message.success("Item removed successfully!");
   };
 
-  const showModal = () => {
-    setIsEditOpen(false);
-    setIsModalOpen(!isModalOpen);
-    setItem("");
-    setColor("");
-    setCapacity("");
-  };
+  const showModal = () => {};
 
   const showEdit = (eKey, eItem, eColor, eCapacity) => {
     setIsEditOpen(true);

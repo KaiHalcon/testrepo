@@ -60,13 +60,7 @@ export const Home = () => {
     message.success("Item removed successfully!");
   };
 
-  const showModal = () => {
-    setIsEditOpen(false);
-    setIsModalOpen(!isModalOpen);
-    setItem("");
-    setColor("");
-    setCapacity("");
-  };
+  const showModal = () => {};
 
   const showEdit = (eKey, eItem, eColor, eCapacity) => {
     setIsEditOpen(true);
@@ -100,17 +94,10 @@ export const Home = () => {
     editItem(item, color, capacity);
   };
 
-  const handleGetProducts = async () => {
-    const res = await axios.get("https://api.restful-api.dev/objects");
-    const productData = res.data;
-    console.log(productData);
-    setItems([...productData]);
-  };
-
   useEffect(() => {
     if (sessionStorage.getItem("isLoggedIn") === "true") {
       setIsAuthenticated(true);
-      handleGetProducts();
+      //handleGetProducts();
     }
   }, [sessionStorage]);
 
